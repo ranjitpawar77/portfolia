@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  
+  data = {
+    name: "Aladeojebi opeyemi",
+    jobtitle: "Product Designer",
+    describe: "I've helped business owners create exceptional experiences for users of Android, iOS and the Web."
+  }
 
 }
