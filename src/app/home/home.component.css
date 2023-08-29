@@ -1,20 +1,15 @@
 .containerMain {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  /* justify-content: center; */
+  /* align-items: flex-end; */
   gap: 10px;
   flex: 1 0 0;
   align-self: stretch;
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: linear-gradient(
-    134deg,
-    #0669ad 0%,
-    rgba(1, 7, 22, 0.28) 50%,
-    rgba(210, 121, 81, 0.61) 100%
-  );
+  background: linear-gradient(134deg, #0669AD 0%, rgba(1, 7, 22, 0.28) 50%, rgba(210, 121, 81, 0.61) 100%);
 }
 .contentBody {
   color: #fff;
@@ -59,6 +54,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  
 }
 .logoText {
   color: #fff;
@@ -103,8 +99,41 @@
   background: rgba(0, 0, 0, 0.3);
 }
 img {
-  width: 445px;
+  width: 500px;
   max-width: 100%;
   position: absolute;
   left: 0vw;
+}
+a{
+  color: silver;
+  text-decoration: none;
+  position: relative;
+}
+a:hover{
+  color: aqua;
+}
+a::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0px;
+  border-bottom: 2px solid black;
+  transition: all 0.5s;
+}
+a:hover::after{
+  width: 100%;
+}
+.socialMedia{
+  border-radius: 500px;
+border: 2px solid #0669AD;
+  fill: linear-gradient(180deg, #DB8D76 0%, #0669AD 100%);  
+  display: flex;
+padding: 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+p{
+  margin-bottom: -1rem;
 }
