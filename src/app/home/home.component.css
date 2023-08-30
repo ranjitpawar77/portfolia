@@ -1,139 +1,15 @@
-.containerMain {
-  /* display: flex; */
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: flex-end; */
-  gap: 10px;
-  flex: 1 0 0;
-  align-self: stretch;
-  width: 100vw;
+.pro {
+  height: 530px;
+  box-shadow: 6px 4px 4px 1px #1098e0;
+}
+.erd {
+  background-image: linear-gradient(124deg, #084b7c, #14171d, #684232);
   height: 100vh;
-  position: relative;
-  background: linear-gradient(134deg, #0669AD 0%, rgba(1, 7, 22, 0.28) 50%, rgba(210, 121, 81, 0.61) 100%);
 }
-.contentBody {
-  color: #fff;
-  font-family: "Exo";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 48px;
+.pft {
+  padding-top: 200px;
 }
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
-
-  color: #fff;
-  font-family: Exo;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
-  flex-wrap: wrap;
-
-  color: #fff;
-  font-family: Exo;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  
-}
-.logoText {
-  color: #fff;
-  font-family: Exo;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.disignation {
-  color: #db8d76;
-  font-family: Exo;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.details {
-  color: #fff;
-  font-family: Exo;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../assets/images/backg.jpg");
-  opacity: 0.03;
-}
-.bgRounded {
-  width: 100%;
-  height: 115vh;
-  position: absolute;
-  top: -179px;
-  left: 0;
-  border-radius: 0px 0px 181px 181px;
-  background: rgba(0, 0, 0, 0.3);
-}
-img {
-  width: 500px;
-  max-width: 100%;
-  position: absolute;
-  left: 0vw;
-}
-a{
-  color: silver;
-  text-decoration: none;
-  position: relative;
-}
-a:hover{
-  color: aqua;
-}
-a::after{
-  content: '';
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 0px;
-  border-bottom: 2px solid black;
-  transition: all 0.5s;
-}
-a:hover::after{
-  width: 100%;
-}
-.socialMedia{
-  border-radius: 500px;
-border: 2px solid #0669AD;
-  fill: linear-gradient(180deg, #DB8D76 0%, #0669AD 100%);  
-  display: flex;
-padding: 12px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-p{
-  margin-bottom: -1rem;
+.sd a:hover,
+.active {
+  border-bottom: 4px solid #684232;
 }
