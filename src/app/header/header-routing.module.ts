@@ -7,14 +7,17 @@ import { HelpesComponent } from '../helpes/helpes.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ComComponent } from '../com/com.component';
 
-const routes: Routes = [ {path:'',component:HeaderComponent,
-children: [
-  {path:'sobre', component: SobreComponent},
-  {path:'contacto', component:ContactoComponent},
-  {path:"help", component: HelpesComponent},
-  {path:'portfolio' ,component: PortfolioComponent},
-  {path:'com' ,component:ComComponent}
-]},];
+const routes: Routes = [{
+  path: '', component: HeaderComponent,
+  children: [
+    { path: '', redirectTo: 'sobre', pathMatch: 'full' },
+    { path: 'sobre', component: SobreComponent },
+    { path: 'contacto', component: ContactoComponent },
+    { path: "help", component: HelpesComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'com', component: ComComponent }
+  ]
+},];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
