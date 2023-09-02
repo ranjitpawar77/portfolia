@@ -1,0 +1,11 @@
+.containerss{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(124deg, #084b7c, #14171d, #684232);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+p{
+    color: #C6C4C4;
+font-family: Exo;
+}

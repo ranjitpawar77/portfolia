@@ -5,7 +5,9 @@ import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'sobre', component: SobreComponent }
+  // { path: 'sobre', component: SobreComponent }
+  {path:'sobre' , loadChildren: () => import('../app/header/header.module').then(m => m.HeaderModule) },
+
 ];
 
 @NgModule({
