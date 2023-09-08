@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  // { path: 'sobre', component: SobreComponent }
-  {path:'sobre' , loadChildren: () => import('../app/header/header.module').then(m => m.HeaderModule) },
+  { path: 'sobre', loadChildren: () => import('../app/header/header.module').then(m => m.HeaderModule) },
 
 ];
 
