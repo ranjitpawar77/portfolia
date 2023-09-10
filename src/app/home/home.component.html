@@ -1,14 +1,36 @@
 <div class="container-fluid ">
+  <div class="mobile-header py-3 d-flex justify-content-between">
+    <div>
+      <h1 class="fw-bolder brown">{{data.name}}</h1>
+    </div>
+    <div>
+      <button class="bg-transparent border-0" (click)="showmenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+          <path
+            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-header">
+    <div class="d-flex align-items-center flex-column">
+      <div>
+        <p class="brown">{{data.jobtitle}}</p>
+      </div>
+      <span class="text-white"> {{data.describe}}</span>
+    </div>
+  </div>
   <div class="row pt-5">
     <div class="col">
       <img src="../../assets/bgmi.png" alt="img" class="pro">
     </div>
-    <div class="col">
+    <div class="col mobile-view-block">
       <div class="d-flex justify-content-center align-items-center pft">
         <div class="d-flex flex-column">
           <div class="d-flex flex-column">
             <h1 class="text-white fw-bolder">{{data.name}}</h1>
-            <p style="color: #d48872;">{{data.jobtitle}}</p>
+            <p class="brown">{{data.jobtitle}}</p>
             <span class="text-white"> {{data.describe}}</span>
           </div>
           <div class="navigation pt-4 sd">
@@ -92,4 +114,11 @@
       </div>
     </div>
   </div>
+</div>
+<div [ngClass]="{'active': toogle}" class="sidemenu">
+  <a routerLink="">Home</a>
+  <a routerLink="./sobre">About</a>
+  <a routerLink="">Resume</a>
+  <a routerLink="">Portfolio</a>
+  <a routerLink="">Contact</a>
 </div>

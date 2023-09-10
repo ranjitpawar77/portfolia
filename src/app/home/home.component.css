@@ -1,6 +1,6 @@
 .pro {
   height: 530px;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .pft {
   padding-top: 200px;
@@ -14,4 +14,51 @@
 }
 .ssd {
   margin: 8px;
+}
+.brown {
+  color: #d48872;
+}
+.sidemenu {
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 80%;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: #0e2d46;
+}
+.active {
+  display: flex;
+}
+.sidemenu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .mobile-view-block {
+    display: none;
+  }
+  .pro {
+    height: 373px;
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-view-block {
+    display: flex;
+  }
+  .mobile-header {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
 }

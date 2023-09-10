@@ -1,5 +1,19 @@
 <app-main></app-main>
-<div class="container-fluid d-flex z-1">
+<div class="mobile-header px-3 py-3 d-flex justify-content-between">
+    <div>
+        <h1 class="fw-bolder brown">{{data.name}}</h1>
+    </div>
+    <div>
+        <button class="bg-transparent border-0" (click)="showmenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                <path
+                    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
+                </path>
+            </svg>
+        </button>
+    </div>
+</div>
+<div class="container-fluid d-flex z-1 desktop-menu">
     <div class="col py-4 ps-5">
         <h1 class="text-white">Aladeojebi opeyemi</h1>
     </div>
@@ -10,5 +24,12 @@
         <a class="text-decoration-none text-white px-3" routerLink="">Portfolio</a>
         <a class="text-decoration-none text-white px-3" routerLink="">Contact</a>
     </div>
+</div>
+<div [ngClass]="{'active': toogle}" class="sidemenu active">
+    <a routerLink="">Home</a>
+    <a routerLink="./sobre">About</a>
+    <a routerLink="">Resume</a>
+    <a routerLink="">Portfolio</a>
+    <a routerLink="">Contact</a>
 </div>
 <router-outlet></router-outlet>

@@ -11,5 +11,9 @@ export class HomeComponent {
     jobtitle: "Product Designer",
     describe: "I've helped business owners create exceptional experiences for users of Android, iOS and the Web."
   }
+  toogle: boolean = false;
+  showmenu() {
+    this.toogle = !this.toogle
+  }
 
 }

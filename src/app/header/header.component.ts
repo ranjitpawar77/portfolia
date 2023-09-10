@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  data = {
+    name: "Aladeojebi opeyemi",
+    jobtitle: "Product Designer",
+    describe: "I've helped business owners create exceptional experiences for users of Android, iOS and the Web."
+  }
+  toogle: boolean = false;
+  showmenu() {
+    debugger
+    this.toogle = !this.toogle
+  }
 }
