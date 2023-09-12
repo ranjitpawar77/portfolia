@@ -13,7 +13,6 @@ export class HeaderComponent {
   }
   toogle: boolean = false;
   showmenu() {
-    debugger
     this.toogle = !this.toogle
   }
 }

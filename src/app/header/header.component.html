@@ -1,5 +1,5 @@
 <app-main></app-main>
-<div class="mobile-header px-3 py-3 d-flex justify-content-between">
+<div class="mobile-header z-1 position-relative px-3 py-3 d-flex justify-content-between">
     <div>
         <h1 class="fw-bolder brown">{{data.name}}</h1>
     </div>
@@ -13,11 +13,11 @@
         </button>
     </div>
 </div>
-<div class="container-fluid d-flex z-1 desktop-menu">
-    <div class="col py-4 ps-5">
+<div class="container-fluid d-flex z-1 desktop-menu position-relative">
+    <div class="col py-4 ps-5 d-flex">
         <h1 class="text-white">Aladeojebi opeyemi</h1>
     </div>
-    <div class="col py-4">
+    <div class="col py-4 d-flex">
         <a class="text-decoration-none text-white px-3 active" routerLink="">Home</a>
         <a class="text-decoration-none text-white px-3" routerLink="./sobre">Sobre</a>
         <a class="text-decoration-none text-white px-3" routerLink="./">Currículo</a>
