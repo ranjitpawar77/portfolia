@@ -23,7 +23,7 @@
                             <p class="text-white">{{data.location}}</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div class="col-6 col-md-4 overflow-hidden">
                         <img src="../../assets/_MG_5214 1.png" width="290px" class="sdef">
                     </div>
                 </div>
@@ -38,7 +38,8 @@
                         <p class="border-line"></p>
                         <div class="d-flex">
                             <div class="row">
-                                <div class="px-5 col" *ngFor="let fill of kan; let i = index">
+                                <div class="px-5 mobile-container text-center col"
+                                    *ngFor="let fill of kan; let i = index">
                                     <span>JavaScript</span>
                                     <div class="d-flex stars">
                                         <div class="col" *ngFor="let fill of kan; let i = index">
@@ -59,7 +60,8 @@
                         <p class="border-line"></p>
                         <div class="d-flex">
                             <div class="row">
-                                <div class="px-5 col" *ngFor="let fill of kan; let i = index">
+                                <div class="px-5 mobile-container text-center col"
+                                    *ngFor="let fill of kan; let i = index">
                                     <span>JavaScript</span>
                                     <div class="d-flex stars">
                                         <div class="col" *ngFor="let fill of kan; let i = index">
@@ -80,9 +82,10 @@
                         <p class="border-line"></p>
                         <div class="d-flex">
                             <div class="row">
-                                <div class="px-5" *ngFor="let fill of kan; let i = index">
+                                <div class="px-5 col mobile-container text-center"
+                                    *ngFor="let fill of kan; let i = index">
                                     <span>JavaScript</span>
-                                    <div class="d-flex">
+                                    <div class="d-flex stars">
                                         <div *ngFor="let fill of kan; let i = index">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +108,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="row">
-                            <div class="col" *ngFor="let fill of ser; let i = index">
+                            <div class="col mobile-container" *ngFor="let fill of ser; let i = index">
                                 <div class="TestBG mx-2">
                                     <div class="card p-3 bg-transparent">
                                         <div class="card-title">

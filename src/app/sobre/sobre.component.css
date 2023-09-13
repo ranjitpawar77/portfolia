@@ -19,6 +19,7 @@ p {
 }
 .TestBG {
   background-color: #113974d1;
+  margin-top: 10px;
 }
 .testimg {
   width: 57px;
@@ -30,4 +31,21 @@ p {
 }
 .stars {
   width: 100px;
+  padding: 8px 0px;
+}
+@media (max-width: 768px) {
+  .pro {
+    height: 373px;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .mobile-container {
+    padding: 10px 10px !important;
+  }
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
 }
