@@ -1,4 +1,5 @@
-<div class="container-fluid ">
+<app-main></app-main>
+<div class="container-fluid position-relative z-1">
   <div class="mobile-header py-3 d-flex justify-content-between">
     <div>
       <h1 class="fw-bolder brown">{{data.name}}</h1>
@@ -16,14 +17,13 @@
   <div class="mobile-header">
     <div class="d-flex align-items-center flex-column">
       <div>
-        <p class="brown">{{data.jobtitle}}</p>
+        <p class="brown padding-tp">{{data.jobtitle}}</p>
       </div>
-      <span class="text-white"> {{data.describe}}</span>
+      <span class="text-white text-center"> {{data.describe}}</span>
     </div>
   </div>
   <div class="row pt-5">
     <div class="col">
-      <img src="../../assets/bgmi.png" alt="img" class="pro">
     </div>
     <div class="col mobile-view-block">
       <div class="d-flex justify-content-center align-items-center pft">
@@ -36,9 +36,9 @@
           <div class="navigation pt-4 sd">
             <a class="text-decoration-none text-white px-3" routerLink="">Home</a>
             <a class="text-decoration-none text-white px-3" routerLink="./sobre">Sobre</a>
-            <a class="text-decoration-none text-white px-3" routerLink="">Currículo</a>
-            <a class="text-decoration-none text-white px-3" routerLink="">Portfolio</a>
-            <a class="text-decoration-none text-white px-3" routerLink="">Contact</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./com">Currículo</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./portfolio">Portfolio</a>
+            <a class="text-decoration-none text-white px-3" routerLink="./contacto">Contacto</a>
           </div>
           <div class="d-flex pt-4" id="social-media">
             <div class="px-3 border-1">
@@ -117,8 +117,8 @@
 </div>
 <div [ngClass]="{'active': toogle}" class="sidemenu">
   <a routerLink="">Home</a>
-  <a routerLink="./sobre">About</a>
-  <a routerLink="">Resume</a>
-  <a routerLink="">Portfolio</a>
-  <a routerLink="">Contact</a>
+  <a routerLink="./sobre">Sobre</a>
+  <a routerLink="./com">Currículo</a>
+  <a routerLink="./portfolio">Portfolio</a>
+  <a routerLink="./contacto">Contacto</a>
 </div>
