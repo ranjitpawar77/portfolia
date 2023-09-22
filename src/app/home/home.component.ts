@@ -11,6 +11,11 @@ export class HomeComponent {
     jobtitle: "Product Designer",
     describe: "I've helped business owners create exceptional experiences for users of Android, iOS and the Web."
   }
+  socialMedia = [{ logo: "./../../assets/logo/linkedin.svg", link: "http://link.com" },
+  { logo: "./../../assets/logo/facebook.svg", link: "http://link.com" },
+  { logo: "./../../assets/logo/whatsapp.svg", link: "http://link.com" },
+  { logo: "./../../assets/logo/github.svg", link: "http://link.com" }
+  ]
   toogle: boolean = false;
   showmenu() {
     this.toogle = !this.toogle

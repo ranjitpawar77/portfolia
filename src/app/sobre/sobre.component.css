@@ -33,6 +33,9 @@ p {
   width: 100px;
   padding: 8px 0px;
 }
+.brown-logo {
+  background-color: #d48872;
+}
 @media (max-width: 768px) {
   .pro {
     height: 373px;

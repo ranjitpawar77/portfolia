@@ -1,11 +1,7 @@
 .pro {
   height: 530px;
   opacity: 0.5;
-}
-.pro1 {
-  background-image: linear-gradient(124deg, #084b7c, #14171d, #684232);
-  width: 100vw;
-  height: 100vh;
+  filter: drop-shadow(7px 9px 16px #08b1f4);
 }
 @media (max-width: 768px) {
   .pro {
@@ -18,5 +14,23 @@
 @media (min-width: 769px) {
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .des {
+    flex: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+  .pro {
+    width: auto;
+  }
+}
+@media (min-width: 712px) and (max-width: 1024px) {
+  .des {
+    flex: auto !important;
+    display: flex;
+    justify-content: center;
+  }
+  .pro {
+    width: auto;
+  }
 }
