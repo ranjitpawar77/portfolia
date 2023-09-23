@@ -29,9 +29,13 @@ p {
 .ds {
   font-size: 12px;
 }
-.stars {
-  width: 100px;
-  padding: 8px 0px;
+.form-button {
+  width: 150px;
+  padding: 7px;
+  background-color: #db8d76;
+  color: #fff;
+  filter: drop-shadow(2px 1px 9px white);
+  border-radius: 35px;
 }
 .brown-logo {
   background-color: #d48872;

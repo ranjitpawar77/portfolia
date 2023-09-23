@@ -2,8 +2,8 @@
   height: 100%;
   z-index: 1;
   position: absolute;
-  top: 50px;
-  width: 80%;
+  top: 47px;
+  width: 59%;
   right: 0;
   display: none;
   flex-direction: column;
@@ -22,6 +22,9 @@
 }
 .brown {
   color: #d48872;
+}
+.logoColor {
+  background-color: #d48872;
 }
 @media (max-width: 768px) {
   .mobile-view-block {

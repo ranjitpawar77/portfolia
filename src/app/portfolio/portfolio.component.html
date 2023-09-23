@@ -19,12 +19,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col" *ngFor="let count of cardCount">
+                    <div class="col" *ngFor="let card of cardData">
                         <div class="card bg-transparent">
                             <div class="card-body d-flex flex-column position-relative">
-                                <img [src]="cardData[0].imageUrl" alt="" class="port">
+                                <img [src]="card.imageUrl" alt="" class="port">
                                 <span class="text-white position-absolute bottom-0 bg-titn">
-                                    {{ cardData[0].text }}
+                                    {{ card.text }}
                                 </span>
                             </div>
                         </div>

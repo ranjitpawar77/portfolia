@@ -1,18 +1,13 @@
 <ng-container *ngIf="show">
     <app-main></app-main>
 </ng-container>
-<div class="mobile-header z-1 position-relative px-3 py-3 d-flex justify-content-between">
+<div class="mobile-header z-1 position-relative px-3 py-3 d-flex justify-content-between" style="width: 95vw;">
     <div>
         <h1 class="fw-bolder brown">{{data.name}}</h1>
     </div>
     <div>
         <button class="bg-transparent border-0" (click)="showmenu()">
-            <svg class="brown-logp" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
-                viewBox="0 0 50 50">
-                <path
-                    d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z">
-                </path>
-            </svg>
+            <img src="./../../assets/logo/header.svg" alt="" class="logoColor">
         </button>
     </div>
 </div>
