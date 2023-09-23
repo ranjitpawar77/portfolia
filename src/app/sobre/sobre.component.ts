@@ -20,12 +20,12 @@ export class SobreComponent {
         { name: 'JavaScript', rating: 4 },
         { name: 'Python', rating: 3 },
         { name: 'Java', rating: 4 },
-        { name: 'JavaScript', rating: 4 },
-        { name: 'Python', rating: 3 },
-        { name: 'Java', rating: 4 },
-        { name: 'JavaScript', rating: 4 },
-        { name: 'Python', rating: 3 },
-        { name: 'Java', rating: 4 }
+        // { name: 'JavaScript', rating: 4 },
+        // { name: 'Python', rating: 3 },
+        // { name: 'Java', rating: 4 },
+        // { name: 'JavaScript', rating: 4 },
+        // { name: 'Python', rating: 3 },
+        // { name: 'Java', rating: 4 }
       ]
     },
     {
