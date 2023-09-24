@@ -37,7 +37,7 @@
 .icon-border {
   border-radius: 100%;
   border: 2px solid #0669ad;
-  padding: 2px 5px;
+  padding: 6px 8px;
 }
 .input-color {
   background: #091a26;
@@ -46,10 +46,15 @@
   border-radius: 10px;
   padding: 10px;
 }
+.input-color:focus {
+  border: none;
+  outline: none;
+}
 .form-button {
   width: 150px;
   padding: 7px;
   background-color: #db8d76;
   color: #fff;
   border-radius: 35px;
+  white-space: nowrap;
 }

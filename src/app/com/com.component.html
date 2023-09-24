@@ -19,13 +19,13 @@
                             <div class="card-body">
                                 <div class="d-flex">
                                     <div class="row">
-                                        <div>
+                                        <div class="col-md-4">
                                             <img class="rounded-circle circle-color" [src]="data.profileImage" alt=""
                                                 style="width: 140px;">
                                         </div>
-                                        <div class="px-3">
+                                        <div class="col-md-8">
                                             <div class="d-flex flex-column gap-2">
-                                                <span class="brown">{{data.name}}</span>
+                                                <span class="brown fw-bold fs-5">{{data.name}}</span>
                                                 <div>
                                                     <span>
                                                         <img src="./../../assets/logo/phone.svg" alt="">
@@ -38,7 +38,7 @@
                                                     <span>
                                                         <img src="./../../assets/logo/gmail.svg" alt="">
                                                     </span>
-                                                    <span class="text-white">
+                                                    <span class="text-white px-2">
                                                         {{data.gmail}}
                                                     </span>
                                                 </div>
@@ -46,7 +46,7 @@
                                                     <span>
                                                         <img src="./../../assets/logo/location.svg" alt="" srcset="">
                                                     </span>
-                                                    <span class="text-white">
+                                                    <span class="text-white px-2">
                                                         {{data.location}}
                                                     </span>
                                                 </div>
@@ -63,23 +63,21 @@
                         </div>
                     </div>
                     <div class="col mb-2 p-2">
-                        <div class="card h-100   bluecolor">
-                            <div class="card-title px-4 py-2">
+                        <div class="card h-100 bluecolor">
+                            <div class="card-title px-4 pt-3 m-0">
                                 <span class="text-white fw-bold">Educação/Formação</span>
                             </div>
-                            <div class="card-body">
-                                <div class="d-flex gap-2 flex-column py-2"
+                            <div class="card-body hidecontent m-0">
+                                <div class="d-flex gap-3 flex-column"
                                     *ngFor="let experience of education; let i = index">
-                                    <span class="brown fw-bold">{{experience.educationName}}</span>
+                                    <span class="brown fw-bold pt-3">{{experience.educationName}}</span>
                                     <div>
-                                        <span>
-                                            <img src="./../../assets/logo/calender.svg" alt="" srcset="">
-                                            <span class="text-white">
-                                                {{experience.statingDate}} - {{experience.endingDate}}
-                                            </span>
+                                        <img src="./../../assets/logo/calender.svg" alt="" srcset="">
+                                        <span class="text-white px-2">
+                                            {{experience.statingDate}} - {{experience.endingDate}}
                                         </span>
                                     </div>
-                                    <span class="text-white">{{experience.edcationschool}}</span>
+                                    <span class="text-white spacecompany">{{experience.edcationschool}}</span>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +94,7 @@
                             <div class="d-flex">
                                 <div class="row">
                                     <ng-container *ngFor="let experiance of experiance; let i = index">
-                                        <div class="col">
+                                        <div class="col-md-6">
                                             <div class="card bg-transparent border-0">
                                                 <div class="card-title">
                                                     <span class="brown">{{experiance.experianceName}}</span>

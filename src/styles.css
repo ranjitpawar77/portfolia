@@ -6,4 +6,6 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #c6c4c4 !important;
+  font-family: Exo !important;
 }

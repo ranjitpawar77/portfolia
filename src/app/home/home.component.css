@@ -11,7 +11,9 @@
 .ssd {
   margin: 8px;
 }
-
+.padding-tp {
+  font-size: 27px;
+}
 @media (max-width: 768px) {
   .mobile-view-block {
     display: none;

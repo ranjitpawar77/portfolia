@@ -12,18 +12,17 @@
                 </div>
                 <div class="row">
                     <div class="d-flex justify-content-center">
-                        <a class="tabs">tudo</a>
-                        <a class="tabs">web</a>
-                        <a class="tabs">app</a>
-                        <a class="tabs">design</a>
+                        <a class="tabs" (click)="showAllData()">All</a>
+                        <a class="tabs" *ngFor="let category of getAllCategories()"
+                            (click)="showCategoryData(category)">{{ category }}</a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col" *ngFor="let card of cardData">
+                    <div class="col" *ngFor="let card of displayedData">
                         <div class="card bg-transparent">
-                            <div class="card-body d-flex flex-column position-relative">
+                            <div class="card-body d-flex flex-column">
                                 <img [src]="card.imageUrl" alt="" class="port">
-                                <span class="text-white position-absolute bottom-0 bg-titn">
+                                <span class="text-white bottom-0 bg-titn">
                                     {{ card.text }}
                                 </span>
                             </div>

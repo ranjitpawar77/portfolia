@@ -36,9 +36,13 @@ p {
   color: #fff;
   filter: drop-shadow(2px 1px 9px white);
   border-radius: 35px;
+  white-space: nowrap;
 }
 .brown-logo {
   background-color: #d48872;
+}
+.brown {
+  color: #db8d76;
 }
 @media (max-width: 768px) {
   .pro {

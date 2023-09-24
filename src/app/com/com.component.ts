@@ -27,6 +27,12 @@ export class ComComponent {
       statingDate: 'Mar 2012',
       endingDate: 'Dez 2015',
       edcationschool: 'Instituto Superior Politécnico Internacional de Angola (ISIA)'
+    },
+    {
+      educationName: 'Formação Pedagógica Inicial de Formadores',
+      statingDate: 'Mar 2012',
+      endingDate: 'Dez 2015',
+      edcationschool: 'Instituto Superior Politécnico Internacional de Angola (ISIA)'
     }]
 
   experiance = [

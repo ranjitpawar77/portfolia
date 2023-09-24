@@ -17,3 +17,15 @@
 .brown {
   color: #d48872;
 }
+.spacecompany {
+  padding-left: 30px;
+}
+.hidecontent {
+  overflow-x: auto;
+  height: 292px;
+}
+.hidecontent::-webkit-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  display: none; /* Safari and Chrome */
+}
