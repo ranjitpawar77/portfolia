@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../shared/servies/dataservies/data.service';
 interface CardItem {
   imageUrl: string;
   text: string;
@@ -13,40 +14,14 @@ interface CardData {
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
-  cardData: CardData = {
-    app: [
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'app'
-      },
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'app'
-      },
-    ],
-    web: [
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'web'
-      },
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'web'
-      },
-    ],
-    design: [
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'design'
-      },
-      {
-        imageUrl: './../../assets/project-management-software-in-mother-tongue-1130x750.png',
-        text: 'design'
-      },
-    ]
-  };
+  cardData: CardData = {}
+  data: any
+  constructor(private mainDataService: DataService) {
+  }
   displayedData: CardItem[] = [];
   ngOnInit() {
+    this.cardData = this.mainDataService.getProjectData()
+    this.data = this.mainDataService.getData()
     this.displayedData = this.getAllData()
   }
   showAllData() {
