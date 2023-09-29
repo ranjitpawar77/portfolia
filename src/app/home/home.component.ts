@@ -8,14 +8,11 @@ import { DataService } from '../shared/servies/dataservies/data.service';
 })
 export class HomeComponent {
   data: any
+  socialMedia: any
   constructor(private mainDataService: DataService) {
     this.data = this.mainDataService.getData()
+    this.socialMedia = this.mainDataService.getSocialMedia()
   }
 
-  socialMedia = [{ logo: "./../../assets/logo/linkedin.svg", link: "http://link.com" },
-  { logo: "./../../assets/logo/facebook.svg", link: "http://link.com" },
-  { logo: "./../../assets/logo/whatsapp.svg", link: "http://link.com" },
-  { logo: "./../../assets/logo/github.svg", link: "http://link.com" }
-  ]
 
 }
